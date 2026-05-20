@@ -190,5 +190,30 @@ numbers = [10 , 5,7,2,1]
 # print("Variable2",variable2)
 # list = [10 ,20,30,40,50,60,70,80,90,100]
 # list[4],list[1] = list[1],list[4]
-# print(print)
-print("testing commit change")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+# print("testing commit change")
+# Given list
+lst = [1,2,3,4,5]#[8, 10, 6, 2, 4]
+count = 0
+n = len(lst)
+for i in range(n):
+    for j in range(0, n - i - 1):
+        count += 1
+        if lst[j] > lst[j + 1]:
+            lst[j], lst[j + 1] = lst[j + 1], lst[j]
+print("Sorted list:", lst)
+print(count)
+# my_list = [8, 10 , 6 ,2]
+# swapped = True
+# while swapped:
+#     swapped = False
+#     for i in range(len(my_list)-1):
+#         count += 1
+#         if my_list[i] > my_list[i + 1]:
+#             swapped = True
+#             my_list[i],my_list[i + 1] = my_list[i + 1],my_list[i]
+# print(my_list)
+# print(count)
+
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        # print(print)
