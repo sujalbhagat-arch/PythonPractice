@@ -213,7 +213,9 @@ print(count)
 #             my_list[i],my_list[i + 1] = my_list[i + 1],my_list[i]
 # print(my_list)
 # print(count)
-
+my_list = [8 , 10 ,6 ,2 ,4]
+my_list.sort()
+print(my_list)
 
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         # print(print)
