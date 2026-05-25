@@ -313,12 +313,107 @@ numbers = [10 , 5,7,2,1]
 #     if day[11]>20.0:
 #         Hot_days += 1
 # print(Hot_days,"days were hot days in month.")
-rooms = [[[False for r in range(20)]for f in range(15)]for t in  range(3)]
-print(rooms)
-rooms[1] [9] [13] = True
-rooms[0] [4] [1] = True
-vacancy = 0
-for room_number in range(20):
-    if not rooms [1][9][room_number]:
-        vacancy += 1
-print("Vacancy in 3rd 15th floor of 3rd building",vacancy)        
+# rooms = [[[False for r in range(20)]for f in range(15)]for t in  range(3)]
+# print(rooms)
+# rooms[1] [9] [13] = True
+# rooms[0] [4] [1] = True
+# vacancy = 0
+# for room_number in range(20):
+#     if not rooms [1][9][room_number]:
+#         vacancy += 1
+# print("Vacancy in 3rd 15th floor of 3rd building",vacancy)
+# def mesaage():
+#     print("enter the value")
+# print("step1")
+# mesaage()
+# a = int(input())
+# print("step2")
+# mesaage()
+# b = int(input())
+# print("step3")
+# mesaage()
+# c = int(input())
+# def mesaage():
+#     print("enter the value")
+#     temp = int(input())
+#     return temp
+
+
+# print("step1")
+
+# a = mesaage()
+# print("step2")
+
+# b = mesaage()
+# print("step3")
+# c = mesaage()
+# print("a:",a)
+# print("b:",b)
+# print("c:",c)
+# def hello(n):
+#     print("Hello,", n)
+# name =input("enter your name:")
+# hello(name)
+# def message(number):
+#     print("enter a number:",number)
+# number = 1234
+# message(1)
+# print(number)
+# def message (what, number):
+#     print("Enter",what,"number",number)
+# message("telephone",11)
+# message(11,"telephone")
+# message("price",5)
+# message("number","number")
+# def introduction(first_name,last_name):
+#     print("Hello,my name is",first_name,last_name)
+# introduction("luke","skywalker")
+# introduction("jese","quick")
+# introduction("clark","kent")
+# introduction(first_name = "james",last_name= "bond")
+# introduction(last_name="skywlaker",first_name= "luke")
+# def adding(a,b,c):
+#     print(a,"+",b,"+",c,"+","=",a+b+c)
+# adding(1,2,3)
+# adding(c=1,a=2,b=3)
+# adding(3,c=1,b=2)
+# adding(3,a=1,b=2)
+# def haapy_new_year(wishes = True):
+#     print("Three...")
+#     print("Two...")
+#     print("three...")
+#     if not wishes:
+#         return
+#     print("Happy new year")
+# haapy_new_year(False)
+# #haapy_new_year()
+# def boaring_function():
+#     print("Boaring Mode ON.")
+#     return 123
+# print("this lesson is intrsting!")
+# boaring_function()
+# print("this lesson is boaring...")
+# def checkMyvar():
+#     if(variable == 10):
+#         print("variable is 10")
+#         return 2
+#     else:
+#         print("variable is not up to the mark")
+#         return
+# # checkMyvar(10)
+# checkMyvar(5)
+# print()
+# def list_sum(lst):
+#     s= 0
+#     for elem in lst:
+#         s+= elem
+#     return s
+# print(list_sum([5,4,3]))
+# print(list_sum)
+def strange_list_fun(n):
+    strange_list = []
+
+    for i in range(0,n):
+        strange_list.append(i+1)
+    return strange_list
+print((strange_list_fun(5)))
