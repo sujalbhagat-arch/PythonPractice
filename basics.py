@@ -431,10 +431,57 @@ numbers = [10 , 5,7,2,1]
 #     return x * 7
 # var = 3 
 # print(mult(7))
-def my_function():
-    global var
-    var = 2
-    print("do i know that variable", var)
-var =1
-my_function()
-print(var)
+# def my_function():
+#     global var
+#     var = 2
+#     print("do i know that variable", var)
+# var =1
+# my_function()
+# print(var)
+# var = 2
+# print(var)
+# def return_var():
+#     global var
+#     var = 5
+#     return var
+# print(return_var())
+# print(var)
+# def my_function(n):
+#     print("i got",n)
+#     n  += 1
+#     print("i have",n)
+# var = 1
+# my_function(var)
+# print(var)
+# def my_function(my_list_1):
+#     print("print #1",my_list_1)
+#     print("print#2",my_list_2)
+#     my_list_1 = [0,1]
+#     print("print#3",my_list_1)
+#     print("print#4",my_list_2)
+# my_list_2 = [2,3]
+# my_function(my_list_2)
+# print("print#5",my_list_2)
+# def my_function(my_list_1):
+#     print("print #1",my_list_1)
+#     print("print#2",my_list_2)
+#     del my_list_1[0]
+#     print("print#3",my_list_1)
+#     print("print#4",my_list_2)
+# my_list_2 = [2,3]
+# my_function(my_list_2)
+# print("print#5",my_list_2)
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     return n * factorial(n - 1)
+
+# print(factorial(5))
+my_tuple = (1,10,100)
+t1 = my_tuple + (1000,10000)
+t2 = my_tuple *3
+print(len(t2))
+print(t1)
+print(t2)
+print(10 in my_tuple)
+print(-10 not in my_tuple)
