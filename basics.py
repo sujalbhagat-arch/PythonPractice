@@ -410,10 +410,31 @@ numbers = [10 , 5,7,2,1]
 #     return s
 # print(list_sum([5,4,3]))
 # print(list_sum)
-def strange_list_fun(n):
-    strange_list = []
+# def strange_list_fun(n):
+#     strange_list = []
 
-    for i in range(0,n):
-        strange_list.append(i+1)
-    return strange_list
-print((strange_list_fun(5)))
+#     for i in range(0,n):
+#         strange_list.append(i+1)
+#     return strange_list
+# print((strange_list_fun(5)))
+# def scope_test():
+#     x = 123
+# scope_test()
+# print(x)
+# def my_function():
+#     print("Do i know that variable?",var)
+# var = 1
+# my_function()
+# print(var)
+# def mult(x):
+#     var = 7
+#     return x * 7
+# var = 3 
+# print(mult(7))
+def my_function():
+    global var
+    var = 2
+    print("do i know that variable", var)
+var =1
+my_function()
+print(var)
