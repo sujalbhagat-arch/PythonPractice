@@ -44,3 +44,15 @@
 # lst = [1, -2, 3, -4, 5]
 # result = [x if x > 0 else 0 for x in lst]
 # print(result)
+dict = {
+    "cat": "chat",
+    "dog": "chien",
+    "horse": "cheval"
+}
+words = ['cat','lion','horse']
+
+for word in words:
+    if word in dict:
+        print(word, "->",dict[word])
+    else:
+        print(word,"is not in dict")
