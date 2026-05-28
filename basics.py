@@ -553,10 +553,90 @@
 #         print(word, "->",dict[word])
 #     else:
 #         print(word,"is not in dict")
-dict = {
-    "cat": "chat",
-    "dog": "chien",
-    "horse": "cheval"
-}
-for key in dict.keys():
-    print(key, "->",dict[key])
+# dict = {
+#     "cat": "chat",
+#     "dog": "chien",
+#     "horse": "cheval"
+# }
+# for key in dict.keys():
+#     print(key, "->",dict[key])
+# for key, value in dict.items():
+#     print(key,"->",value)
+# for value in dict.values():
+#     print(value)
+# pol_eng_dict = {
+#     "zamek": "castle",
+#     "woda": "water",
+#     "gleba": "soil"
+# }
+# # print("pol_eng_dict:", pol_eng_dict)
+# copy_dict = pol_eng_dict.copy()
+# # print("copy_dict:",copy_dict)
+# # pol_eng_dict["zamek"] = "lock"
+# # item = pol_eng_dict["zamek"]
+# # print(item)
+# phonebook ={}
+
+# print(phonebook)
+# phonebook ["adam"] = 5463637
+# print(phonebook)
+
+# del phonebook["adam"]
+# print(phonebook)
+# pol_eng_dict = {"kwiat": "flower"}
+# pol_eng_dict.update(
+#     {
+#         "gleba": "soil"
+    
+#     }
+# )
+# print(pol_eng_dict)
+# pol_eng_dict.popitem()
+# print(pol_eng_dict)
+# pol_eng_dict = {
+#        "zamek": "castel",
+#        "woda": "water",
+#        "gleba": "soil"
+
+
+# }
+# if "zamek1" in pol_eng_dict:
+#     print("yes ! zamek1 is present")
+# else:
+#     print("No! zamek 1 is not present")
+# pol_eng_dict = {
+#        "zamek": "castel",
+#        "woda": "water",
+#        "gleba": "soil"
+
+
+# }
+# print(pol_eng_dict)
+# print(len(pol_eng_dict))
+
+# pol_eng_dict.clear()
+# print(pol_eng_dict)
+# print(len(pol_eng_dict))
+
+# del pol_eng_dict
+# print(pol_eng_dict)
+sd= {}
+
+while True:
+    name = input("Enter the Student name:")
+    if name == "":
+        break
+    score = int(input(f"Enter{name}score"))
+    if score not in range(1,11):
+        break
+    if name in sd:
+        sd[name] += (score, )
+    else:
+        sd[name] = (score, )
+print(sd)
+
+for name, mark in sd.items():
+    sum = 0
+    for m in mark:
+        sum += m
+    print(name, "->",sum/len(mark))
