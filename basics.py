@@ -620,23 +620,79 @@
 
 # del pol_eng_dict
 # print(pol_eng_dict)
-sd= {}
+#   sd= {}
 
-while True:
-    name = input("Enter the Student name:")
-    if name == "":
-        break
-    score = int(input(f"Enter{name}score"))
-    if score not in range(1,11):
-        break
-    if name in sd:
-        sd[name] += (score, )
-    else:
-        sd[name] = (score, )
-print(sd)
+# while True:
+#     name = input("Enter the Student name:")
+#     if name == "":
+#         break
+#     score = int(input(f"Enter{name}score"))
+#     if score not in range(1,11):
+#         break
+#     if name in sd:
+#         sd[name] += (score, )
+#     else:
+#         sd[name] = (score, )
+# print(sd)
 
-for name, mark in sd.items():
-    sum = 0
-    for m in mark:
-        sum += m
-    print(name, "->",sum/len(mark))
+# for name, mark in sd.items():
+#     sum = 0
+#     for m in mark:
+#         sum += m
+#     print(name, "->",sum/len(mark))
+# class ThisMyfirstclass:
+#     pass
+# FirstObject = ThisMyfirstclass()
+# print(FirstObject)
+# class ThisMyfirstclass:
+#     name = "sujal"
+#     age  = 25
+#     def getName(self):
+#         print(self.name)
+# firstObject = ThisMyfirstclass()
+# print(firstObject.name)
+
+# firstObject.getName()
+# print(firstObject.name)
+# class Student:
+#     def __init__(self):
+#         self.name = ""
+#         self.age = 0
+#         self.gender = ""
+#         self.grade = ""
+# sujal = Student()
+# print(sujal)
+
+# sujal.name = "sujalbhagat"
+# sujal.age = 20
+# sujal.gender = "male"
+# sujal.grade = "12th"
+
+# print(sujal.name)
+# print(sujal.age)
+# print(sujal.gender)
+# print(sujal.grade)
+# class Person:
+#   def __init__(self, name, age=18):
+#     self.name = name
+#     self.age = age
+
+# p1 = Person("himani")
+# p2 = Person("sujal", 25)
+
+# print(p1.name, p1.age)
+# print(p2.name, p2.age)
+
+class Student:
+    def __init__(self, name, age, gender, grade):
+        self.name = name
+        self.age = age
+        self.gender = gender
+        self.grade = grade
+    def printDetails(self):
+        print("Name:",self.name)
+        print("Age:",self.age)
+        print("Gender:",self.gender)
+        print("Grade:",self.grade)
+sujal = Student("sujal bhagat", 20, "male", "12th")
+sujal.printDetails()
