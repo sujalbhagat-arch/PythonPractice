@@ -683,16 +683,333 @@
 # print(p1.name, p1.age)
 # print(p2.name, p2.age)
 
-class Student:
-    def __init__(self, name, age, gender, grade):
-        self.name = name
-        self.age = age
-        self.gender = gender
-        self.grade = grade
-    def printDetails(self):
-        print("Name:",self.name)
-        print("Age:",self.age)
-        print("Gender:",self.gender)
-        print("Grade:",self.grade)
-sujal = Student("sujal bhagat", 20, "male", "12th")
-sujal.printDetails()
+# class Student:
+#     def __init__(self, name, age, gender, grade):
+#         self.name = name
+#         self.age = age
+#         self.gender = gender
+#         self.grade = grade
+#     def printDetails(self):
+#         print("Name:",self.name)
+#         print("Age:",self.age)
+#         print("Gender:",self.gender)
+#         print("Grade:",self.grade)
+# sujal = Student("sujal bhagat", 20, "male", "12th")
+# sujal.printDetails()
+# class Classy:
+#     def method(self,par):
+#         print("method",par)
+# obj = Classy()
+# obj.method(1)
+# class Classy:
+#     varia =2
+#     def method(self):
+#         print(self.varia,self.var)
+# obj = Classy()
+# obj.var = 3
+# obj.method()
+# class Star:
+#     def __init__(self, name , galaxy):
+#         self.name = name
+#         self.galaxy = galaxy
+# sun = Star("sun","milky way")
+# print(sun)
+# class Star:
+#     def __init__(self, name , galaxy):
+#         self.name = name
+#         self.galaxy = galaxy
+#     def __str__(self):
+#         return self.name + ' in ' + self.galaxy
+# sun = Star("sun","milky way")
+# class Vehicle:
+#     pass
+# class LandVehicle(Vehicle):
+#     pass
+# class TrackedVehicle(LandVehicle):
+#     pass
+# for cls1 in [Vehicle, LandVehicle, TrackedVehicle]:
+#     for cls2 in [Vehicle,LandVehicle, TrackedVehicle]:
+#         print(issubclass(cls1, cls2), end="\t")
+#     print()
+# class Super:
+#     supVar = 1
+# class Sub(Super):
+#     subVar = 2
+# obj = Sub()
+# print(obj.subVar)
+# print(obj.supVar)
+# class Super:
+#     def __init__(self):
+#         self.supVar = 11
+# class Sub(Super):
+#     def __init__(self):
+#         super().__init__()
+#         self.subVar = 12
+
+# obj = Sub()
+# print(obj.subVar)
+# print(obj.supVar)
+# class Level1:
+#     variable_1 = 100
+#     def __init__(self):
+#         self.var_1 = 101
+#     def fun_1(self):
+#         return 102
+# class Level2(Level1):
+#     variable_2 = 200
+#     def __init__(self):
+#         super().__init__()
+#         self.var_2 = 201
+#     def fun_2(self):
+#         return 202
+# class Level3(Level2):
+#     variable_3 = 300
+#     def __init__(self):
+#         super().__init__()
+#         self.var_3 = 301
+#     def fun_3(self):
+#         return 302
+# obj = Level3()
+# print(obj.variable_1, obj.var_1, obj.fun_1())
+# print(obj.variable_2, obj.var_2, obj.fun_2()) 
+# print(obj.variable_3, obj.var_3, obj.fun_3())
+# class ExampleClass:
+#     counter = 0
+#     def __init__(self, val =1):
+#         self.__first = val
+#         ExampleClass.counter += 1
+# example_object_1 = ExampleClass()
+# example_object_2 = ExampleClass(2)
+# example_object_3 = ExampleClass(4)
+# print(example_object_1.__dict__, example_object_1.counter)
+# print(example_object_2.__dict__, example_object_2.counter)
+# print(example_object_3.__dict__, example_object_3.counter)
+    
+# class ExampleClass:
+#     counter = 0
+#     def __init__(self, val =1):
+#         self.__first = val
+#         ExampleClass.counter += 1
+#         if val % 2 != 0:
+#             self.a = 1
+#         else:
+#             self.b = 1
+# example_object = ExampleClass(6)
+# print(example_object.a)
+# print(example_object.b)
+class ExampleClass:
+    counter = 0
+    def __init__(self, val =1):
+        self.__first = val
+        ExampleClass.counter += 1
+        if val % 2 != 0:
+            self.a = 1
+        else:
+            self.b = 1
+example_object = ExampleClass(2)
+
+# try:
+#     print("a = ", example_object.a)
+# except:
+#     try:
+#         print("b =",example_object.b)
+# #     except:
+# #         print("the error has occured! Sliently passing")
+# if hasattr(example_object, 'a'):
+#     print("a =", example_object.a)
+
+# if hasattr(example_object, 'b'):
+#     print("b =", example_object.b)
+# class Python:
+#     population = 1
+#     victims = 0
+#     def __init__(self):
+#         self.length_ft = 3
+#         self.__venomous = False
+# myObj = Python()
+# print("myObj.population",myObj.population)
+# print("myObj.victims",myObj.victims)
+# print("myObj.length",myObj.length_ft)
+# print("myObj.__venomous",myObj.__venomous)
+# class Classy:
+#     def visible(self):
+#         print("visible")
+#     def __hidden(self):
+#         print("hidden")
+# obj = Classy()
+# obj.visible()
+# try:
+#     obj.__hidden
+# except:
+#     print("failed")
+# obj._Classy__hidden()
+# class Vechile:
+#     pass
+# class LandVechile(Vechile):
+#     pass
+# class TrackedVechile(LandVechile):
+#     pass
+# my_vechile = Vechile()
+# my_land_vehicle = LandVechile()
+# my_tracked_vechile = TrackedVechile()
+# for obj in [my_vechile, my_land_vehicle, my_tracked_vechile]:
+#     for cls in [Vechile,LandVechile, TrackedVechile]:
+#         print(isinstance(obj,cls),end="\t")
+#     print()
+# class SampleClass:
+#     def __init__(self,val):
+#         self.val = val
+
+# object_1 = SampleClass(0)
+# object_2 = SampleClass(2)
+# object_3 = object_1
+# object_3.val += 1
+
+# print(object_1 is object_2)
+# print(object_2 is object_3)
+# print(object_3 is object_1)
+# print(object_1.val,object_2.val,object_3.val)
+
+# string_1 = "Marry had a little "
+# string_2 = "Marry had a little lamb"
+# string_1 += "lamb"
+# print(string_1 == string_2,string_1 is string_2)
+# class Super:
+#     def __init__(self,name):
+#       self.name = name
+
+#     def __str__(self):
+#         return "My name is " +  self.name  + "."
+    
+# class sub(Super):
+#     def __init__(self, name):
+#         pass
+#         Super.__init__(self,name)
+
+# obj = sub("andy")                       
+# print(obj)
+# class Super:
+#     def __init__(self,name):
+#       self.name = name
+
+#     def __str__(self):
+#         return "My name is " +  self.name  + "."
+    
+# class sub(Super):
+#     def __init__(self, name):
+#         super().__init__(name)
+
+# obj = sub("andy")                       
+# print(obj) 
+
+# class SuperA:
+#     var_a = 10
+#     def fun_a(self):
+#         return 11
+
+# class SuperB:
+#     var_b = 20
+#     def fun_b(self):
+#         return 21
+
+# class Sub(SuperA, SuperB):
+#     pass
+
+# # obj = Sub()
+# # print(obj.var_a, obj.fun_a())
+# # print(obj.var_b, obj.fun_b())
+# class Level1:
+#     var = 100
+#     def fun(self):
+#         return 101
+
+# class Level2(Level1):
+#     var = 200
+#     def fun(self):
+#         return 201
+# class Level3(Level2):
+#     pass
+# obj = Level3()
+# print(obj.var,obj.fun())
+
+# class Left:
+#     var = "L"
+#     var_left = "LL"
+#     def fun(self):
+#         return "Left"
+
+# class Right:
+#     var = "R"
+#     var_right = "RR"
+#     def fun(self):
+#         return "Right"
+    
+# class Sub(Left, Right):
+#     pass
+ 
+
+# obj = Sub()
+# print(obj.var, obj.var_left, obj.var_right, obj.fun())
+
+    # class One:
+    #     def do_it(Self):
+    #         print("do_it from One")
+
+    #     def Doanything(self):
+    #         self.do_it()
+
+    # class Two(One):
+    #     def do_it(Self):
+    #         print("do_it from two")
+
+    # one = One()
+    # two = Two()
+    # one.Doanything()
+    # two.Doanything()
+
+# def recipocal(n):
+#     try:
+#         n = 1 / n
+#     except ZeroDivisionError:
+#         print("Division Failed")
+#         return None
+#     else:
+#         print("Everything went fine")
+#         return n 
+
+# print("-------------")
+# print("recipocal(2):",recipocal(2))
+# print("-----------")
+# print("recipocal0:",recipocal(0))
+
+
+# def recipocal(n):
+#     try:
+#         n = 1 / n
+#     except ZeroDivisionError:
+#         print("Division Failed")
+#         return None
+#     else:
+#         print("Everything went fine")
+#     finally:
+#         print("It's time to say good bye")
+#         return n 
+
+# print("-------------")
+# print("recipocal(2):",recipocal(2))
+# print("-----------")
+# print("recipocal0:",recipocal(0))
+# try:
+#     i = int("Hello!")
+# except Exception as e:
+#     print(e)
+#     print(e.__str__())
+class MyZeroDivisonError(ZeroDivisionError):
+    pass
+def do_the_division(mine):
+    if mine:
+        raise MyZeroDivisonError("some worse news")
+    else:
+        raise ZeroDivisionError("some bad news")
+    
+do_the_division(False)
