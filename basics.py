@@ -797,16 +797,16 @@
 # example_object = ExampleClass(6)
 # print(example_object.a)
 # print(example_object.b)
-class ExampleClass:
-    counter = 0
-    def __init__(self, val =1):
-        self.__first = val
-        ExampleClass.counter += 1
-        if val % 2 != 0:
-            self.a = 1
-        else:
-            self.b = 1
-example_object = ExampleClass(2)
+# class ExampleClass:
+#     counter = 0
+#     def __init__(self, val =1):
+#         self.__first = val
+#         ExampleClass.counter += 1
+#         if val % 2 != 0:
+#             self.a = 1
+#         else:
+#             self.b = 1
+# example_object = ExampleClass(2)
 
 # try:
 #     print("a = ", example_object.a)
@@ -1004,12 +1004,80 @@ example_object = ExampleClass(2)
 # except Exception as e:
 #     print(e)
 #     print(e.__str__())
-class MyZeroDivisonError(ZeroDivisionError):
-    pass
-def do_the_division(mine):
-    if mine:
-        raise MyZeroDivisonError("some worse news")
-    else:
-        raise ZeroDivisionError("some bad news")
+# class MyZeroDivisonError(ZeroDivisionError):
+#     pass
+# def do_the_division(mine):
+#     if mine:
+#         raise MyZeroDivisonError("some worse news")
+#     else:
+#         raise ZeroDivisionError("some bad news")
     
-do_the_division(False)
+# do_the_division(False)
+# city = 'Bhopal'
+# print(city[0])
+# print(city[2])
+
+# print(city[-1])
+# print(city[5])
+
+# print(city[-3])
+# print(city[3])
+# name = 'Priya Sharma'
+# print(name[0:5])
+# print(name[6:])
+# print(name[:5])
+# print(name[::2])
+# print(name[::-1])
+
+# print(len(name))
+
+# text = '  Hello Python World!  '
+# print(text.upper())
+# print(text.lower())
+# print(text.title())
+# print(text.capitalize())
+# print(text.strip())
+# print('Python' in text)
+# print(text.find('Python'))
+# print(text.count('l'))
+
+# print (text.replace('Python', 'AI'))
+
+# csv = 'Sujal , Inodre , Devloper'
+# parts = csv.split(',')
+# print(parts)
+# print(parts[0])
+# rejoined = ' | '.join(parts)
+# print(rejoined)
+
+# print('hello123'.isalnum())
+# print('12345'.isdigit())
+# print('Python'.isalpha())
+# print(' '.isspace())
+
+# email = 'studen123@gmail.com'
+# print(email.endswith('.com'))
+# print(email.startswith('stu'))
+# name, marks, rank = 'Sujal', 95.567, 3
+# print(f'Hello,{name}!')
+
+# print(f'Marks: {marks:.2f}')
+# print(f'Marks: {marks:.0f}')
+# print(f'Count: {1000000:,}')
+
+# print(f'{name:<15}|{marks:>8.2f}|Rank:{rank}')
+
+# price , gst = 500, 0.18
+# print(f'Price:rs{price}|GST:Rs.{price*gst:.2f}| Total:Rs.{price*(1+gst):.2f}')
+string = "Hello, how are you doing today?"
+count = 0
+
+for ch in string:
+    if ch.lower() in "aeiou":
+        count += 1
+
+print("Number of vowels:", count)
+
+print(string.find('you'))
+print(string[15:18])
+print(string[::-1])
