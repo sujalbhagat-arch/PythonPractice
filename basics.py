@@ -1069,15 +1069,21 @@
 
 # price , gst = 500, 0.18
 # print(f'Price:rs{price}|GST:Rs.{price*gst:.2f}| Total:Rs.{price*(1+gst):.2f}')
-string = "Hello, how are you doing today?"
-count = 0
+# string = "Hello, how are you doing today?"
+# count = 0
 
-for ch in string:
-    if ch.lower() in "aeiou":
-        count += 1
+# for ch in string:
+#     if ch.lower() in "aeiou":
+#         count += 1
 
-print("Number of vowels:", count)
+# print("Number of vowels:", count)
 
-print(string.find('you'))
-print(string[15:18])
-print(string[::-1])
+# print(string.find('you'))
+# print(string[15:18])
+# print(string[::-1])
+
+# non_palin, palin = 'abcdef', 'axttxa'
+with open("data.txt","r") as file:
+    data = file.read()
+
+print(data)
